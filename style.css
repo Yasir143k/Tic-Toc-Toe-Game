@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,600;1,8..144,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 2px solid blueviolet;
+    height: 40px;
+}
+.icon{
+    background-color: blueviolet;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 20px;
+    width: 110px;
+}
+nav ul{
+    list-style-type: none;
+} 
+.GameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.contaner{
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+}
+.box{
+    border:2px solid black ;
+    font-size: 9vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(208, 177, 236);
+}
+.gameinfo{
+    padding: 0 34px;
+}
+.info{
+    font-size: xx-large;
+    display: flex;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+.button{
+    background-color: rgb(183, 138, 225);
+    color: black;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    height: 25px;
+    width: 100px;
+    cursor: pointer;
+    margin-left: 115px;
+    transition: all .3s ease-in-out; 
+  }
+.button:hover{
+    background-color: white;
+    color: blueviolet;
+    border: 2px solid rgb(168, 103, 228);
+    transform: scale(1.2); 
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+@media screen and (max-width: 800px)
+{
+    .GameContainer{
+        flex-wrap: wrap;
+        }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .gameinfo h1{
+        font-size: large;
+    }
+    .info{
+        padding: 0;
+        font-size: large;
+    }
+    .button{
+        margin: 0;
+    }
+    .contaner{
+        grid-template-rows: repeat(3,20vw);
+    grid-template-columns: repeat(3,20vw);
+    }
+    
+}
